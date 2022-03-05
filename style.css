@@ -1,0 +1,75 @@
+/* font-family: 'Fredoka', sans-serif; */
+
+body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .sectionForm form {
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.sectionForm input {
+    border-radius: 8px;
+    height: 64px;
+    width: 300px;
+    margin: 0 0 24px;
+}
+
+.sectionForm label {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #0070AD;
+    margin: 0 0 16px;
+    align-self: start;
+}
+
+.sectionForm input::placeholder {
+    font-size: 1rem;
+    opacity: 0.3;
+    padding-left: 16px;
+ }
+
+.sectionForm #userValue {
+    border: solid 2px #B6C0C5;
+    padding: 8px 16px;
+}
+
+.sectionForm .btn_send {
+    border: none;
+    background-color: #0070AD;
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sectionResult{
+    display: flex;
+    
+}
+
+.sectionResult .result {
+    border: solid 2px #B6C0C5;
+    border-radius: 8px;
+    margin: 0 0 16px;
+    width: 300px;
+    height: 420px;
+}
+
+footer {
+    color: #B6C0C5;
+    text-align: center;
+}

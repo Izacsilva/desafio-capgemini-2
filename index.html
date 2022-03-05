@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1 - Mediana</title>
+    <link rel="shortcut icon" href="./Imagens/favicon-capgemini.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap');
+    </style>
+    <link rel="stylesheet" href="./style/estilosPadroes.css">
+    <link rel="stylesheet" href="./style/header_style.css">
+    <link rel="stylesheet" href="./style/index_main_style.css">
+    <link rel="stylesheet" href="./style/modalStyle.css">
+
+</head>
+
+<body>
+    <header class="cabecalho container row">
+        <h1><img class="logo" src="./Imagens/logo-capgemini.png" alt="Logotipo Academia Capgemini"></h1>
+        <nav>
+            <ul class="menu">
+                <li class="itemsMenu"><a href="#" class="link"> Questão 1</a></li>
+                <li class="itemsMenu"><a href="#" class="link"> Questão 2</a></li>
+                <li class="itemsMenu"><a href="#" class="link"> Questão 3</a></li>
+                <li class="itemsMenu"><a href="#" class="link"> Wiki Questões</a></li>
+            </ul>
+            <div class="burgerMenu hiden">
+                <img src="./Imagens/burger_menu-modal.png">
+            </div>
+        </nav>
+
+    </header>
+    <main class="principal container column">
+        <section class="sectionForm">
+            <form class="column">
+                <label for="userValue">Digite números separados por vírgulas</label>
+                <input type="text" name="userValeu" id="listaNumeros" placeholder="1,2,3,5,...">
+                <input type="submit" value="Mostrar Mediana" class="btn">
+            </form>
+        </section>
+        <section class="sectionResult">
+            <div class="result">
+
+            </div>
+        </section>
+    </main>
+    <section class="bgModal container">
+        <header class="boxModal">
+            <div class="btnFechar">
+                <img src="./Imagens/close_popup-modal.png" alt="">
+            </div>
+        </header>            
+        <main class="cardMenu boxModal">
+            <ul class="links">
+                <li class="menuLink">Questão 1</li>
+                <li class="menuLink">Questão 2</li>
+                <li class="menuLink">Questão 3</li>
+                <li class="menuLink">Wiki Questões</li>
+            </ul>
+        </main>
+    </section>
+
+
+
+    <footer>
+        <p>desenvolvido por Studiencode</p>
+    </footer>
+    <script src="./script/questaoUm.js"></script>
+</body>
+
+</html>

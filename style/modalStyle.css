@@ -1,0 +1,17 @@
+.bgModal {
+    width: 100vw;
+    height: 100vh;
+    min-width: 320px;
+
+    background-color: #0070AD40;
+}
+
+.btnFechar {
+    position: absolute;
+    right: 0;
+    
+}
+
+.boxModal {
+    width: 96%;
+}

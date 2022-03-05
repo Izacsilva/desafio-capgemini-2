@@ -1,0 +1,34 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    min-width: 320px;
+    margin: 24px 0;
+}
+
+header .logo {
+    height: 32px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.itemsMenu {
+    padding: 8px 16px;
+
+}
+
+.itemsMenu .link {
+    text-decoration: none;
+    color: #767b7e;
+}
+
+
+.hiden {
+    display: none;
+}
+
+.burgerMenu {
+    cursor: pointer;
+}

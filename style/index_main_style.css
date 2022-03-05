@@ -1,0 +1,59 @@
+.principal {
+    display: flex;
+    align-items: center;
+}
+
+.principal .sectionForm form {
+    display:flex;  
+}
+
+.sectionForm input {
+    border-radius: 8px;
+    color: #767b7e;
+
+    font-size: 18px;
+    font-family: 'Fredoka', sans-serif;
+    
+    margin: 0 0 24px;
+    padding-left: 16px;
+    
+    width: 300px;
+    height: 64px;
+}
+
+.sectionForm label {
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 300px;
+    color: #0070AD;
+    margin: 0 0 16px;
+}
+
+.sectionForm input::placeholder {
+    font-size: 1rem;
+    opacity: 0.3;
+    padding-left: 16px;
+ }
+
+.sectionForm #userValue {
+    border: solid 2px #B6C0C5;
+    padding: 8px 16px;
+}
+
+.sectionForm .btn {
+    border: none;
+    background-color: #0070AD;
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+
+footer {
+    color: #B6C0C5;
+    text-align: center;
+}
