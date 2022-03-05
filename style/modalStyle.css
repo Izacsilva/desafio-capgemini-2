@@ -70,6 +70,7 @@
 .esconde {
     display: none;
 }
-/* .mostrar .modal {
+
+.mostrar .modal {
     transition: 0.4s;
-} */
+}

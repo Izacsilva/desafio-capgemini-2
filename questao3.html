@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questão 1 - Mediana</title>
+    <title>Questão 3 - Criptografar textos</title>
     <link rel="shortcut icon" href="./Imagens/favicon-capgemini.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap');
@@ -12,32 +13,33 @@
     <link rel="stylesheet" href="./style/estilosPadroes.css">
     <link rel="stylesheet" href="./style/header_style.css">
     <link rel="stylesheet" href="./style/index_main_style.css">
+    <link rel="stylesheet" href="./style/modalStyle.css">
+    <link rel="stylesheet" href="./style/mediaQuery.css">
 
 </head>
+
 <body>
-    <header>
+    <header class="cabecalho container row">
         <h1><img class="logo" src="./Imagens/logo-capgemini.png" alt="Logotipo Academia Capgemini"></h1>
         <nav>
-            <ul class="menu hiden">
-                <li class="itemsMenu">Questão 1</li>
-                <li class="itemsMenu">Questão 2</li>
-                <li class="itemsMenu">Questão 3</li>
-                <li class="itemsMenu">Wiki Questões</li>
+            <ul class="menu">
+                <li class="itemsMenu"><a href="#" class="link"> Questão 1</a></li>
+                <li class="itemsMenu"><a href="#" class="link"> Questão 2</a></li>
+                <li class="itemsMenu"><a href="#" class="link"> Questão 3</a></li>
+                <li class="itemsMenu"><a href="#" class="link"> Wiki Questões</a></li>
             </ul>
             <div class="burgerMenu">
-                <div class="rectRoud"></div>
-                <div class="rectRoud margin"></div>
-                <div class="rectRoud"></div>
+                <img src="./Imagens/burger_menu-modal.png">
             </div>
         </nav>
-        
+
     </header>
-    <main class="container">
+    <main class="principal container column">
         <section class="sectionForm">
-            <form action="">
-                <label for="userValue">Digite números separados por vírgulas</label>
+            <form class="column">
+                <label for="userValue">Digite um texto:</label>
                 <input type="text" name="userValeu" id="listaNumeros" placeholder="1,2,3,5,...">
-                <input type="submit" value="Mostrar Mediana" class="btn">
+                <input type="submit" value="Encriptar" class="btn">
             </form>
         </section>
         <section class="sectionResult">
@@ -46,9 +48,51 @@
             </div>
         </section>
     </main>
+    <section class="bgModal container">
+        <header>
+            <div class="btnFechar">
+                <img src="./Imagens/close_popup-modal.png" alt="">
+            </div>
+        </header>            
+        <main class="cardMenu container">
+            <ul class="links">
+                <li class="botao"><a href="#" class="link">Questão 1</a></li>
+                <li class="botao"><a href="#" class="link">Questão 2</a></li>
+                <li class="botao"><a href="#" class="link">Questão 3</a></li>
+                <li class="botao"><a href="#" class="link">Wiki Questões</a></li>
+            </ul>
+        </main>
+    </section>
+
+
+
     <footer>
         <p>desenvolvido por Studiencode</p>
     </footer>
-    <script src="./script/questaoTres.js"></script>
+    <script src="./script/questaoUm.js"></script>
 </body>
+
+<script>
+
+    function abreModal(btnModal) {
+        const burguerMenu = document.querySelector(".burgerMenu")
+        burguerMenu.classList.add('esconde')
+        const modal = document.querySelector(".bgModal")
+        modal.classList.add('mostrar')
+    }
+
+    function fechaModal()  {
+        const btnClose = document.querySelector(".btnFechar")
+        burguerMenu.classList.remove('esconde')
+        const modal = document.querySelector(".bgModal")
+        modal.classList.remove('mostrar')
+    }
+
+    const btnClose = document.querySelector(".btnFechar")
+    const burguerMenu = document.querySelector(".burgerMenu")
+
+    burguerMenu.addEventListener('click', abreModal);
+    btnClose.addEventListener('click', fechaModal);
+</script>
+
 </html>
