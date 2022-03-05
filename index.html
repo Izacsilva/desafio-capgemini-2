@@ -11,9 +11,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap');
     </style>
     <link rel="stylesheet" href="./style/estilosPadroes.css">
-    <link rel="stylesheet" href="./style/header_style.css">
-    <link rel="stylesheet" href="./style/index_main_style.css">
-    <link rel="stylesheet" href="./style/modalStyle.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/modal.css">
     <link rel="stylesheet" href="./style/mediaQuery.css">
 
 </head>
@@ -72,27 +72,6 @@
     <script src="./script/questaoUm.js"></script>
 </body>
 
-<script>
-
-    function abreModal(btnModal) {
-        const burguerMenu = document.querySelector(".burgerMenu")
-        burguerMenu.classList.add('esconde')
-        const modal = document.querySelector(".bgModal")
-        modal.classList.add('mostrar')
-    }
-
-    function fechaModal()  {
-        const btnClose = document.querySelector(".btnFechar")
-        burguerMenu.classList.remove('esconde')
-        const modal = document.querySelector(".bgModal")
-        modal.classList.remove('mostrar')
-    }
-
-    const btnClose = document.querySelector(".btnFechar")
-    const burguerMenu = document.querySelector(".burgerMenu")
-
-    burguerMenu.addEventListener('click', abreModal);
-    btnClose.addEventListener('click', fechaModal);
-</script>
+<script src="./script/modal.js"></script>
 
 </html>
