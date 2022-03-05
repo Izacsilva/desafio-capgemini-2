@@ -1,17 +1,20 @@
 .cabecalho{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-width: 320px;
     margin: 24px 0;
 }
 
 header .logo {
     height: 32px;
+    
 }
 
 .menu {
     display: flex;
     list-style: none;
+    transition: 0.4s;
 }
 
 .itemsMenu {
@@ -25,10 +28,9 @@ header .logo {
 }
 
 
-.hiden {
-    display: none;
-}
+
 
 .burgerMenu {
     cursor: pointer;
+    
 }

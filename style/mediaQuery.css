@@ -1,0 +1,14 @@
+@media (max-width: 720px) {
+    
+    .menu {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 720px) {
+    .burgerMenu {
+        
+        display: none;
+    }
+}
