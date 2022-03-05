@@ -3,6 +3,15 @@
     align-items: center;
 }
 
+.principal h1, p {
+    margin: 16px 0 24px;
+    color: #767b7e;
+}
+
+.principal p {
+    max-width: 300px;
+}
+
 .principal .sectionForm form {
     display:flex;  
 }
@@ -49,7 +58,6 @@
     font-weight: bold;
     letter-spacing: 1px;
 }
-
 
 
 
