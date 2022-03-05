@@ -28,7 +28,7 @@
                 <li class="itemsMenu"><a href="#" class="link"> Questão 3</a></li>
                 <li class="itemsMenu"><a href="#" class="link"> Wiki Questões</a></li>
             </ul>
-            <div class="burgerMenu hiden">
+            <div class="burgerMenu">
                 <img src="./Imagens/burger_menu-modal.png">
             </div>
         </nav>
@@ -49,17 +49,17 @@
         </section>
     </main>
     <section class="bgModal container">
-        <header class="boxModal">
+        <header>
             <div class="btnFechar">
                 <img src="./Imagens/close_popup-modal.png" alt="">
             </div>
         </header>            
-        <main class="cardMenu boxModal">
+        <main class="cardMenu container">
             <ul class="links">
-                <li class="menuLink">Questão 1</li>
-                <li class="menuLink">Questão 2</li>
-                <li class="menuLink">Questão 3</li>
-                <li class="menuLink">Wiki Questões</li>
+                <li class="botao"><a href="#" class="link">Questão 1</a></li>
+                <li class="botao"><a href="#" class="link">Questão 2</a></li>
+                <li class="botao"><a href="#" class="link">Questão 3</a></li>
+                <li class="botao"><a href="#" class="link">Wiki Questões</a></li>
             </ul>
         </main>
     </section>
@@ -71,5 +71,28 @@
     </footer>
     <script src="./script/questaoUm.js"></script>
 </body>
+
+<script>
+
+    function abreModal(btnModal) {
+        const burguerMenu = document.querySelector(".burgerMenu")
+        burguerMenu.classList.add('esconde')
+        const modal = document.querySelector(".bgModal")
+        modal.classList.add('mostrar')
+    }
+
+    function fechaModal()  {
+        const btnClose = document.querySelector(".btnFechar")
+        burguerMenu.classList.remove('esconde')
+        const modal = document.querySelector(".bgModal")
+        modal.classList.remove('mostrar')
+    }
+
+    const btnClose = document.querySelector(".btnFechar")
+    const burguerMenu = document.querySelector(".burgerMenu")
+
+    burguerMenu.addEventListener('click', abreModal);
+    btnClose.addEventListener('click', fechaModal);
+</script>
 
 </html>

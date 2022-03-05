@@ -1,17 +1,75 @@
 .bgModal {
     width: 100vw;
     height: 100vh;
-    min-width: 320px;
+    /* min-width: 320px; */
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
 
-    background-color: #0070AD40;
+    background-color: #359ed691;
+}
+
+.bgModal.mostrar{
+    display: flex;
 }
 
 .btnFechar {
     position: absolute;
-    right: 0;
-    
+    right: 21px; top: 29px;
+    cursor: pointer;
 }
 
-.boxModal {
-    width: 96%;
+.cardMenu {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px #23688d25;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 80%;
+    height: 480px;
 }
+
+.botao .link {
+    font-weight: bold;
+    color: white;
+    background-color: #67AAD9;
+    border-radius: 4px;
+
+    min-width: 260px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 16px;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+}
+
+
+.esconde {
+    display: none;
+}
+/* .mostrar .modal {
+    transition: 0.4s;
+} */

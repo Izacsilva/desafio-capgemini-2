@@ -13,7 +13,6 @@ header .logo {
 
 .menu {
     display: flex;
-    list-style: none;
     transition: 0.4s;
 }
 
@@ -23,7 +22,7 @@ header .logo {
 }
 
 .itemsMenu .link {
-    text-decoration: none;
+    
     color: #767b7e;
 }
 
