@@ -41,19 +41,39 @@ const botao = document.querySelector('.btn');
 
 botao.addEventListener("click", function transformaEmArray(event) {
     event.preventDefault();
+
+    /* Estes comandos limpam as mensagens de Erro. */
+    const secaoPrincipal = document.querySelector(".principal")
+    const div = secaoPrincipal.querySelector("div")
+    div.innerHTML = ""
+    /* ------- */
     
     const form = document.querySelector("form")
     
     const campoTexto = document.querySelector('#String')
     
     let string = campoTexto.value;
+
+    if(campoTexto.value === "") {
+        teste.campoVazio();
+        return
+        
+    }
     
     print(Encrypt(string))
     form.reset();
 });
 
 
+let teste = {
+    campoVazio: () => {
+        const secaoPrincipal = document.querySelector(".principal")
+        const div = secaoPrincipal.querySelector("div")
 
+        div.classList.add("alertErro")
+        const span = document.createElement("span")
+        span.textContent = "Campo vazio, escreva um texto!"
 
-
-
+        div.appendChild(span)
+    },
+}

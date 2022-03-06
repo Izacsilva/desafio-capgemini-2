@@ -32,7 +32,7 @@ As soluções estão separadas em 3 arquivos .js na pasta **/script**
 - questaoDois.js
 - questaoTres.js
 
-## 📖 Documentação
+## 📖 Documentação | Soluções
 
 link da Wiki: https://github.com/Izacsilva/desafio-capgemini-2/wiki
 

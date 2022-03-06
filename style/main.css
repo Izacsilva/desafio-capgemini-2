@@ -44,6 +44,13 @@
     padding-left: 16px;
  }
 
+ .alertErro {
+     padding: 8px 24px;
+     margin: 0 8px;
+     background-color: #ffae004d;
+     border: solid 2px #ffae00c2;
+ }
+
  .sectionForm .btn:disabled {
     background-color: #bebebe;
  }

@@ -1,0 +1,20 @@
+{
+  "name": "desafio-capgemini-2",
+  "version": "1.0.0",
+  "description": "O objetivo desta documentação é detalhar a solução das três questões propostas pela Academia Capgemini. Foram utilizados JavaScript para criar os algoritmo que resolvem as questões, html e css para gerar uma interface para nossa aplicação.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Izacsilva/desafio-capgemini-2.git"
+  },
+  "author": "Izac Silva",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Izacsilva/desafio-capgemini-2/issues"
+  },
+  "homepage": "https://github.com/Izacsilva/desafio-capgemini-2#readme"
+}
