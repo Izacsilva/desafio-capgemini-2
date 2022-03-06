@@ -11,6 +11,10 @@ header .logo {
     
 }
 
+/* .cabecalho h2 {
+    font-size: 18px;
+} */
+
 .menu {
     display: flex;
     transition: 0.4s;

@@ -44,10 +44,10 @@
     padding-left: 16px;
  }
 
-.sectionForm #userValue {
-    border: solid 2px #B6C0C5;
-    padding: 8px 16px;
-}
+ .sectionForm .btn:disabled {
+    background-color: #bebebe;
+ }
+
 
 .sectionForm .btn {
     border: none;
@@ -60,6 +60,18 @@
 }
 
 
+
+#secaoResultado .resultado {
+    background-color: #FFB000;
+    color: white;
+    border-radius: 8px;
+    
+    font-size: 96px;
+    font-weight: bold;
+
+    padding: 56px 64px;
+
+}
 
 footer {
     color: #B6C0C5;

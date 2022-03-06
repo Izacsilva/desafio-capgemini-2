@@ -2,39 +2,65 @@ const botao = document.querySelector('.btn');
 
 botao.addEventListener("click", function transformaEmArray(event) {
     event.preventDefault();
-    let novoArray = [];
-    // Toda entrada de dados html do tipo "<input>" é uma string, para transforma-la em um
-    // "Array" vamos usar o método split(), usando a vírgula para separar os número, por item na lista.
-    const listaNumeros = document.querySelector('#listaNumeros');
-    const numeroX = document.querySelector('#numX');
+    
+    
+    const form = document.querySelector("form")
+    
+    const listaDeNumeros = document.querySelector('#listaDeNumeros').value.split(","); // Transforma string para Lista 
+    const numeroX = document.querySelector('#numeroX').value; 
+    
+    let novoArray = listaDeNumeros;
 
+    // Todo valor de input é igual a type "String", vamos passar os valores para type "Number"
+    
+    let x = Number(numeroX)
 
-    novoArray = listaNumeros.value.split(',');
-    valorDeX = numeroX.value;
+    for(let i = 0; i < novoArray.length; i++){
+        novoArray[i] = parseInt(novoArray[i])
+    }
 
-    console.log(novoArray, valorDeX);
+    // Chama a função que verifica se tem pares.
+    qtdePares(novoArray, x)
 
-    ordemDeInteiros(valorDeX, novoArray);
+    form.reset()
+
+    // Chama a função que printa o valor na tela.
+    print(qtdePares(novoArray, x))
+    
+
 });
 
-function ordemDeInteiros(x, lista) {
-    //vamos ordenar os elementos e depois colocar a ordem em decrescente.
-    let arrayEmOrdem = lista.sort()
-    arrayEmOrdem.reverse()
+function qtdePares(lista, x) {
+    quantosPares = 0;
 
-    // Transformar nossos dados para números.
-
-    let numeroX = Number(x)
+    qtde = lista.length;
     
-    // Passa por cada elemento da lista, transformando-o de String para type == Number
-    // e retornando-o como números, para a lista.
-    for (let i = 0; i < arrayEmOrdem.length; i++) { 
-        arrayEmOrdem[i] = parseInt(arrayEmOrdem[i]);
-        console.log(typeof(arrayEmOrdem[i]))
-      }
-    
-      // Então vamos retirar os números repetidos.
-      let arrayUnico = [...new Set(arrayEmOrdem)]; //retira os repetidos
-    console.log(numeroX, arrayUnico)
+   // interando nos elementos da lista e escolhendo os pares.
+   for (let i = 0; i < qtde; i++) {     
+       
+       for (let j = i+1; j < qtde; j++) {
+           if (lista[i] - lista[j] == x || lista[j] - lista[i] == x ) {
+            quantosPares++;
+           }
+       }
 
+   }
+
+   return quantosPares;
+   
 }
+
+function print(quantosPares) {
+    const secaoResultado = document.querySelector("#secaoResultado")
+    
+    const divElement = document.createElement("div")
+    divElement.classList.add('resultado')
+
+    divElement.textContent = quantosPares
+    
+    secaoResultado.appendChild(divElement)
+}
+
+
+
+

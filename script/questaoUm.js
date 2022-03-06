@@ -1,30 +1,42 @@
-
-
-function printMediana(array) {
-    let mediana = (array.length - 1) / 2
-
-    console.log(array[mediana])
-}
 const botao = document.querySelector('.btn');
+
 
 botao.addEventListener("click", function transformaEmArray(event) {
     event.preventDefault();
-    let novoArray = [];
-    // Toda entrada de dados html do tipo "<input>" é uma string, para transforma-la em um
-    // "Array" vamos usar o método split(), usando a vírgula para separar os número, por item na lista.
-    const listaNumeros = document.querySelector('#listaNumeros').value.split(',');
     
-    novoArray = listaNumeros;
-
-    colocaEmOrdem(novoArray);
+    const form = document.querySelector("form")
+    
+    const listaDeNumeros = document.querySelector('#listaDeNumeros')
+    
+    // pegando o valor do campo e transformando em vetor.
+    let novoArray = listaDeNumeros.value.split(',');
+    
+    // encontrarMediana(novoArray)
+    
+    print(encontraMediana(novoArray))
+    form.reset();
 });
 
-function colocaEmOrdem(lista) {
-    let arrayEmOrdem = lista.sort()
+function encontraMediana(arr) {
 
-    printMediana(arrayEmOrdem)
+    let lista = arr.sort((a, b) => a - b);
+    
+    let meio = Math.floor(lista.length / 2);
+    
+    let mediana = lista.length % 2 !== 0 ? lista[meio] : (lista[meio - 1] + lista[meio]) / 2;
 
-} 
+    return mediana;
 
-// testa se tem texto no campo, testar se tem caracter especial, testar se tem valores se virgula
-// testar se o valor é impar.
+}
+
+function print(mediana) {
+    
+    const secaoResultado = document.querySelector("#secaoResultado")
+    
+    const divElement = document.createElement("div")
+    divElement.classList.add('resultado')
+
+    divElement.textContent = mediana
+    
+    secaoResultado.appendChild(divElement)
+}

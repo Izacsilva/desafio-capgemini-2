@@ -1,4 +1,4 @@
-function abreModal(btnModal) {
+function abreModal() {
     const burguerMenu = document.querySelector(".burgerMenu")
     burguerMenu.classList.add('esconde')
     const modal = document.querySelector(".bgModal")
