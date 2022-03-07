@@ -46,7 +46,7 @@ Após receber o e-mail comecei a trabalhar na interface, implementando html-css 
 
 Ter começado pela interface foi um erro, um hábito que tenho com os processos que uso para treinar quando estou resolvendo desafios de “html-css-javascript”. Correto seria trabalhar em cima das soluções.
 
-Com dicas do [João](https://github.com/jobafi), retornei ao foco do projeto, para finaliza-lo em meio a famosa deadline, aprendi a importância de trabalhar com processos, priorizando os resultados.
+Com dicas do [João](https://github.com/jobafi), retornei ao foco do projeto, para finalizá-lo em meio a famosa deadline, aprendi a importância de trabalhar com processos, priorizando os resultados.
 
 
 
