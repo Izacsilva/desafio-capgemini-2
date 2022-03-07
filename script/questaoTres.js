@@ -19,7 +19,7 @@ function Encrypt(string) {
     let colunXY = Math.ceil(Math.sqrt(strLength)); // Raiz quadrada do tamanho da string(√T)
     let txtEncrypt = ""; // Armazena o resultado da criptografia.
 
-    // Loop intera na string, fatiando o texto e guardando em colunas.
+    // Loop intera na string, fatiando o texto e salvando na variável txtEncrypt
     for (var i = 0; i < strLength; i = i + colunXY) {
         arrayStr.push(strSEspaço.slice(i, i + colunXY));
     }

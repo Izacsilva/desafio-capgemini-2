@@ -38,11 +38,6 @@ botao.addEventListener("click", function transformaEmArray(event) {
     const listaDeNumeros = document.querySelector('#listaDeNumeros')
     /* ------- */
 
-
-   
-
-    
-    
     // pegando o valor do campo e transformando em vetor.
     let novoArray = listaDeNumeros.value.split(',');
     
